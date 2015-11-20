@@ -1,0 +1,88 @@
+.buttonright, .buttonleft, .left, .right, .search, .settingsgray, .settingswhite, .question, .iconpage, .iconcheck, .iconbulb{
+	background: url(../images/icons.png) no-repeat;
+}
+
+.buttonright{
+	background-position: -43px -4px ;
+	width: 22px;
+	height: 22px;
+}
+
+.buttonleft{
+	background-position: -2px -2px ;
+	width: 22px;
+	height: 22px;
+}
+
+.left{
+	background-position: -3px -33px ;
+	width: 22px;
+	height: 50px;
+	float: left;
+	position:relative;
+		top:20px;
+		left:-50px;
+}
+
+.right{
+	background-position: -45px -34px ;
+	width: 22px;
+	height: 50px;
+	float: right;
+	position:relative;
+		top:20px;
+		left:50px;
+
+}
+
+.search{
+	background-position: -94px -1px ;
+	width: 23px;
+	height: 22px;
+}
+
+.settingsgray{
+	background-position: -148px -2px ;
+	width: 20px;
+	height: 20px;
+	float: right;
+	position: relative;
+	top: -38px;
+
+}
+
+.settingswhite{
+	background-position: -200px -2px ;
+	width: 20px;
+	height: 20px;
+}
+
+.question{
+	background-position: -254px 0;
+	width: 20px;
+	height: 20px;
+}
+
+.iconpage{
+	background-position: 0 -94px ;
+	width: 19px;
+	height: 35px;
+	float: left;
+	margin: 5px;
+}
+
+.iconcheck{
+	background-position: -52px -97px ;
+	width: 22px;
+	height: 32px;
+	float: left;
+	margin: 5px;
+}
+
+.iconbulb{
+	background-position: -100px -89px ;
+	width: 22px;
+	height: 39px;
+	float: left;
+	margin: 5px;
+}

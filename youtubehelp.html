@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>youtube</title>
+
+</head>
+<body>
+
+    <div id="youtube"> </div>
+
+
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+      <script>
+      // function loadData(){
+      // console.log(dataURL);
+  $(document).ready(function() {
+    var html = "";
+
+        $.ajax({
+          type: "GET",
+          url: "rhcp.xml",
+          dataType: "xml",
+          success:   parseData,
+          error: noData
+        });
+
+        function noData() {
+          console.log("data not pushed")
+        }
+
+      //how to run a function multiple times with loops and arrays
+      function parseData(data) {
+            console.log("worked")
+            console.log(data);
+        $(data).find('hit').each(function(){
+            var $hit = $(this); //this selects the current node
+            var song = $hit.attr('name');    //this selects an attribute    --only need to select attribute of the person because we already found the node
+            var album = $hit.find('album').text();
+            var year = $hit.find('year').text();
+            console.log(song);
+        html += '<h3>' + song + '</h3> <h4>' + album + '|' + year + '</h4>';
+
+        });
+
+
+        console.log(html);
+        $('#youtube').append(html);
+      }
+    })
+        //html= '<div id="player""></div>' ;    })
+        // html= '<div id="player' +[i] + '"></div>' ;    })
+
+
+
+      // $(document).ready(function(){
+      //   //kick off functions
+      //   var dataURLS = ["http://api.flickr.com/.json", "http://api.instagram.com.json"]
+      //
+      //   for (i=0;i<dataurls.length; i++){
+      //   loadData(dataURLS[i]); //need a loop if calling i
+      //   //this means that it will pass both links through dataURL
+      //   }
+      // });
+      </script>
+</body>
+<html>

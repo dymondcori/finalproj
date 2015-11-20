@@ -1,0 +1,89 @@
+<html>
+<head>
+ <title>chart</title>
+</head>
+
+<body>
+
+  <div id="bar" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script>
+      function buildBar() {
+      $('#bar').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Drunk Driving Fatalities'
+        },
+        subtitle: {
+            text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Wikipedia</a>'
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '8px',
+                    fontFamily: 'Verdana, sans-serif'
+                  }
+                }
+              // title: {
+              //     text: 'Level of Strictness for DUI Laws'
+              // }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Fatalities per 100,000 people'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+        },
+        series: [{
+            name: 'Spotify Favorites',
+            data:  [
+              ['Californication', 88704030],
+              ['Under The Bridge', 89916862],
+              ['Snow (Hey Oh)', 77827298],
+              ['Otherside', 62925309],
+              ["Scar Tissue", 53699839],
+              ["Can't Stop", 47645710],
+              ["Dani California", 46998687],
+              ["By The Way", 34122109],
+              ["The Adventures of Rain Dance Maggie", 16526392]
+
+            ],
+            color: 'red',
+            //ParentData,
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#3D316A',
+                align: 'right',
+              //  format: '{point.y:.1f}', // one decimal
+                y: -10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+      });
+    //  buildSomething();
+      };
+
+      $(document).ready(function(){
+      console.log("doc ready!");
+      buildBar();
+      })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+//css for instagram
+
+.instabox {
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+}
+.instapic {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    /*padding: 5px;*/
+  }
+
+}
+.instagram-date-div {
+  text-align: center;
+}
+
+.instagram-caption-div {
+  margin-bottom: 18px;
+}

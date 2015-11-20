@@ -1,0 +1,145 @@
+body {
+  padding: 10px;
+  background-image: url('../images/background.jpg');
+  background-repeat: repeat;
+   background-attachment: fixed;
+  text-align:center;
+}
+h1 {
+  color: white;
+  font-size: 40pt;
+  font-family: 'Amatic SC', cursive;
+}
+h2{
+  color: red;
+  font-size: 20pt;
+  font-family: 'Amatic SC', cursive;
+}
+h3 {
+  color: red; /*orange*/
+  font-size: 15pt;
+  margin-left: 15px;
+  font-family: 'Amatic SC', cursive;
+}
+.middle {
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+.mainphoto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/*css for tabbed box*/
+ul#tabs {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: center; }
+  ul#tabs li {
+    display: inline-block;
+    background-color: #black;
+    border-bottom: solid 5px red;
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    color: #fff;
+    cursor: pointer; }
+    ul#tabs li:hover {
+      background-color: white; }
+    ul#tabs li.active {
+      background-color: red; }
+
+ul#tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul#tab li {
+    display: none;
+    background-color:black;
+
+    padding: 30px;
+    border: solid black; }
+    ul#tab li.active {
+      display: block; }
+    ul#tab li h2 {
+      font-weight: 400;
+      margin-bottom: 30px;
+      padding-bottom: 5px;
+      border-bottom: solid 5px white; }
+
+/*map*/
+#map { height: 100%; }
+
+/*fixed top menu bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: center;
+    padding: 5px;
+    font-family: 'Amatic SC', cursive;
+}
+
+a {
+    display: block;
+    width: 70px;
+    /*background-color: black;*/
+    color: white;
+}
+#main-menu {
+    position:fixed;
+    top:0;
+  /*  padding: 15px;  */
+    /*background-color: red;*/
+    color: red;
+
+}
+
+.navdiv {
+  padding: 4px;
+  margin-top: 6px;
+  background-color: black;
+  font-size: 15pt;
+  font-family: 'Amatic SC', cursive;
+
+}
+.navdiv :hover{
+  background-color: white;
+}
+
+
+#login {
+   display: none;
+ }
+
+ #loggedin {
+   display: none;
+ }
+
+ .cover {
+   width: 100%;
+ }
+
+.rhcpmain {
+  text-align: center;
+}
+ #rhcpmaintext {
+   font-size: 225px;
+   color: black;
+   position: absolute;
+   top: 100px;
+   left: 15px;
+   width: 100%;
+   margin: 0 auto;
+   width: 300px;
+   height: 50px;
+   font-family: 'Amatic SC', cursive;
+
+ }
