@@ -37,6 +37,8 @@
               <div class="navdiv-active"><a href="about.html">About</a></div>
               <div class="navdiv2"><a href="listen.html">Listen</a></div>
               <div class="navdiv2"><a href="rhcp.html">Fans</a></div>
+              <div class="arrow"><a href="#">&#8593;</a></div>
+
 
             </div>
       </div>
@@ -61,6 +63,10 @@
       </div>
   </div>
 
+
+  <div id="map"></div>
+
+
   <div class= "row col-md-12 col-sm-12">
     <img class="mainphoto" src="images/band.jpg" alt="band photo rhcp">
   </div>
@@ -69,141 +75,77 @@
    <p></p>
 </div>
 
-<!--  <div id="main">-->
+
+
+<script type="text/javascript">
+
+
+var map;
+function initMap() {
+var fairfax = {lat: 34.083401, lng: -118.359734};
+
+map = new google.maps.Map(document.getElementById('map'), {
+//  center: {lat: 28.578031, lng: -81.351116},
+center: fairfax,
+zoom: 15,
+mapTypeId: google.maps.MapTypeId.HYBRID
+//keep adding things here to change the map
+});
+
+var marker = new google.maps.Marker({
+position: fairfax,
+map: map,
+title: 'Fairfax'
+});
+
+marker.addListener('click', function() {
+infowindow.open(map, marker);
+});
 
 
 
-<!--Concert Map tabbed -->
-<!-- <div class="container">
-    <ul id="tabs">
-        <li class="active">Map1</li>
-        <li>map2</li>
-        <li>map3</li>
-    </ul>
-    <ul id="tab">
-        <li class="active">
-            <h2>Map</h2>
-          <!--  <div id="map"></div> -->
-            <!-- </li>
-        <li>
-            <h2>Map2</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, fugit nobis qui temporibus culpa inventore consectetur aliquam. Unde, itaque, quos, laboriosam, reprehenderit ipsa deleniti sequi animi eveniet dolorem maiores alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, pariatur, laborum, sit molestiae eos itaque iste repudiandae eum aperiam ad sapiente dicta reprehenderit. Omnis culpa harum blanditiis voluptates explicabo quis?
-        </li>
-        <li>
-            <h2>map3</h2>
-        </li>
-    </ul>
-</div> -->
+
+var contentString = '<div id="content">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h2>Where it all started</h2>'+
+    '<div id="bodyContent">'+
+    '<p>"The roots of the Red Hot Chili Peppers extend back to 1977, when guitarist Hillel Slovak and drummer Jack Irons formed a KISS-inspired hard-rock band named Anthym with friends at Fairfax High School in Los Angeles. Flea became their bass player in 1979, while another high-school chum, Anthony Kiedis, would adopt the role of emcee."</p>' +
+    '<p> Source: https://rockhall.com/inductees/red-hot-chili-peppers/bio/#sthash.tX4mYboo.dpuf</p>' +
+    '</div>'+
+    '</div>';
+
+var infowindow = new google.maps.InfoWindow({
+  content: contentString
+});
 
 
 
 
-    <!-- map js -->
-  <!-- <script type="text/javascript">
+  // show_my_map();
 
-  var map;
-  function initMap() {
-  var unc = {lat: 35.905262, lng: -79.050973};
-  var state = {lat: 35.784663, lng: -78.682095};
-  var duke = {lat: 35.965991, lng: -78.948102};
+  }
 
-  map = new google.maps.Map(document.getElementById('map'), {
-  //  center: {lat: 28.578031, lng: -81.351116},
-  center: unc,
-    zoom: 11,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-    //keep adding things here to change the map
-  });
-
-  var marker = new google.maps.Marker({
-    position: unc,
-    map: map,
-    title: 'UNC'
-  });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
+//  function show_my_map() {
+//
+//  mapOptions var = {
+//    Level: 17,
+//    center: new google.maps.LatLng (41.650299490787712, 12.536399034779)
+//    mapTypeId: google.maps.MapTypeId.SATELLITE
+//  };
+//
+//
+//
+//  map = new google.maps.Map (document.getElementById ('map-canvas'),
+//     mapOptions);
 
 
-  var marker2 = new google.maps.Marker({
-    position: state,
-    map: map,
-    title: 'STATE'
-  });
-  marker2.addListener('click', function() {
-    infowindow2.open(map, marker2);
-  });
 
-
-  var marker3 = new google.maps.Marker({
-    position: duke,
-    map: map,
-    title: 'DUKE'
-  });
-  marker3.addListener('click', function() {
-    infowindow3.open(map, marker3);
-  });
-
-  var contentString = '<div id="content">'+
-        '<div id="siteNotice">'+
-        '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">University of North Carolina</h1>'+
-        '<div id="bodyContent">'+
-        '<iframe src="https://en.wikipedia.org/wiki/University_of_North_Carolina_at_Chapel_Hill"></iframe>'+
-        '</div>'+
-        '</div>';
-
-    var infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
-
-    var contentState = '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">NC State University</h1>'+
-          '<div id="bodyContent">'+
-          '<iframe src="https://en.wikipedia.org/wiki/North_Carolina_State_University"></iframe>'+
-          '</div>'+
-          '</div>';
-
-      var infowindow2 = new google.maps.InfoWindow({
-        content: contentState
-      });
-      var contentDuke = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Duke University</h1>'+
-            '<div id="bodyContent">'+
-            '<iframe src="https://en.wikipedia.org/wiki/Duke"></iframe>'+
-            '</div>'+
-            '</div>';
-
-        var infowindow3 = new google.maps.InfoWindow({
-          content: contentDuke
-        });
-
-
-          var flightPlanCoordinates = [
-                  {lat: 35.905262, lng: -79.050973},
-                  {lat: 35.784663, lng: -78.682095},
-                  {lat: 35.965991, lng: -78.948102},
-                  {lat: 35.905262, lng: -79.050973}
-          ];
-          var flightPath = new google.maps.Polyline({
-            path: flightPlanCoordinates,
-            geodesic: true,
-            strokeColor: '#FF0000',
-            strokeOpacity: 1.0,
-            strokeWeight: 2
-          });
-
-          flightPath.setMap(map);
-
-
-      }
-
-
-    </script> -->
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4RLH88vEJYyQwRtFEUhucvmo3TQS13bA&callback=initMap">
+  //put key where it says "YOUR_KEY_HERE" in code
+</script>
 
     <!-- <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4RLH88vEJYyQwRtFEUhucvmo3TQS13bA&callback=initMap">

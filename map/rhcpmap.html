@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> RHCP I'm With You Tour </title>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+
+      #map {
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+        
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <div id="map" onclick = "initMap()"</div>
+
+
+
+    <script type="text/javascript">
+
+
+var map;
+function initMap() {
+  var fairfax = {lat: 34.083401, lng: -118.359734};
+
+  map = new google.maps.Map(document.getElementById('map'), {
+  //  center: {lat: 28.578031, lng: -81.351116},
+  center: fairfax,
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+    //keep adding things here to change the map
+  });
+
+  var marker = new google.maps.Marker({
+    position: fairfax,
+    map: map,
+    title: 'Fairfax'
+  });
+
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+
+
+
+  var contentString = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h2>Where it all started</h2>'+
+        '<div id="bodyContent">'+
+        '<p>The roots of the Red Hot Chili Peppers extend back to 1977, when guitarist Hillel Slovak and drummer Jack Irons formed a KISS-inspired hard-rock band named Anthym with friends at Fairfax High School in Los Angeles. Flea became their bass player in 1979, while another high-school chum, Anthony Kiedis, would adopt the role of emcee.</p>' +
+        '<p> Source: https://rockhall.com/inductees/red-hot-chili-peppers/bio/#sthash.tX4mYboo.dpuf</p>' +
+        '</div>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+
+
+
+      // show_my_map();
+
+      }
+
+  //  function show_my_map() {
+   //
+  //  mapOptions var = {
+  //    Level: 17,
+  //    center: new google.maps.LatLng (41.650299490787712, 12.536399034779)
+  //    mapTypeId: google.maps.MapTypeId.SATELLITE
+  //  };
+   //
+   //
+   //
+  //  map = new google.maps.Map (document.getElementById ('map-canvas'),
+  //     mapOptions);
+
+
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4RLH88vEJYyQwRtFEUhucvmo3TQS13bA&callback=initMap">
+      //put key where it says "YOUR_KEY_HERE" in code
+    </script>
+  </body>
+</html>
