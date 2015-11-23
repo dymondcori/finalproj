@@ -1,9 +1,12 @@
 body {
-  padding: 10px;
+  /*padding: 10px;*/
+  background-color:#3972BF;
+  text-align:center;
+}
+body.backgroundim {
   background-image: url('../images/background.jpg');
   background-repeat: repeat;
    background-attachment: fixed;
-  text-align:center;
 }
 h1 {
   color: white;
@@ -25,11 +28,13 @@ h3 {
   padding: 5px;
   margin: 0 auto;
   text-align: center;
-  background-color: white;
+  /*background-color: white;*/
 }
 .mainphoto {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 10px;
+  opacity: 0.4;
 }
 
 
@@ -55,20 +60,25 @@ ul#tabs {
 ul#tab {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
-  ul#tab li {
+  padding: 0;
+ }
+ul#tab li {
     display: none;
     background-color:black;
 
-    padding: 30px;
-    border: solid black; }
-    ul#tab li.active {
-      display: block; }
-    ul#tab li h2 {
+    padding: 10px;
+    border: solid black;
+  }
+ul#tab li.active {
+      display: block;
+      color: white;
+}
+ul#tab li h2 {
       font-weight: 400;
       margin-bottom: 30px;
       padding-bottom: 5px;
-      border-bottom: solid 5px white; }
+      border-bottom: solid 5px white;
+}
 
 /*map*/
 #map { height: 100%; }
@@ -114,6 +124,49 @@ a {
   background-color: white;
 }
 
+.navdiv2 {
+  padding: 4px;
+  margin-top: 6px;
+  background-color: red;
+  font-size: 15pt;
+  font-family: 'Amatic SC', cursive;
+
+}
+.navdiv2 :hover{
+  background-color: white;
+}
+
+.navdiv-active {
+  padding: 4px;
+  margin-top: 6px;
+  background-color: #3972BF;
+  font-size: 15pt;
+  font-family: 'Amatic SC', cursive;
+}
+
+#top {
+    position:fixed;
+    top:0;
+    left: 350px;
+    font-size: 40pt;
+  /*  padding: 15px;  */
+    /*background-color: red;*/
+    color: red;
+
+}
+
+.arrow {
+  text-align: left;
+  padding: 4px;
+  margin-top: 6px;
+  background-color: red;
+  font-size: 15pt;
+  font-family: 'Amatic SC', cursive;
+
+}
+.arrow :hover{
+  background-color: white;
+}
 
 #login {
    display: none;
@@ -123,9 +176,7 @@ a {
    display: none;
  }
 
- .cover {
-   width: 100%;
- }
+
 
 .rhcpmain {
   text-align: center;
@@ -141,5 +192,23 @@ a {
    width: 300px;
    height: 50px;
    font-family: 'Amatic SC', cursive;
-
  }
+
+#rhcpsubtext {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  top: 400px;
+  left: 15px;
+  width: 100%;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  font-family: 'Amatic SC', cursive;
+
+}
+
+.cover {
+  width: 100%;
+
+}

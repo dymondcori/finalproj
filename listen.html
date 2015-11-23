@@ -1,154 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Red Hot Chili Peppers</title>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>chart</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <!--  <link rel="stylesheet" href="css/base.css" /> -->
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
-    <!-- js -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/tabs.js"></script>
-    <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
-    <script src="js/practice.js" type="text/javascript"></script>
-    <script src="js/spotify.js" type="text/javascript"></script>
+ <link href="css/styles.css" rel="stylesheet">
+ <link href="css/main.css" rel="stylesheet">
+ <script src="js/jquery-1.9.1.min.js"></script>
+ <script src="js/modernizr.js"></script>
+ <script src="js/tabs.js"></script>
 
 
-    <!--font -->
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
-
-  </head>
+ <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<!--  <link rel="stylesheet" href="css/base.css" /> -->
 
 
-  <body>
-    <header>
+<!--font -->
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
+</head>
 
-      <div id="main-menu-container container">
-            <div class= "row" id="main-menu">
+<body>
+          <header>
 
-                <div class="navdiv"><a href="index.html">About</a></div>
-                <div class="navdiv"><a href="listen.html">Listen</a></div>
-                <div class="navdiv"><a href="rhcp.html">Fans</a></div>
+            <div id="main-menu-container container">
+                  <div class= "row" id="main-menu">
+                    <div class="navdiv2"><a href="index.html">&#10035;</a></div>
+                    <div class="navdiv2"><a href="about.html">About</a></div>
+                    <div class="navdiv-active"><a href="listen.html">Listen</a></div>
+                    <div class="navdiv2"><a href="rhcp.html">Fans</a></div>
 
+                  </div>
             </div>
-      </div>
-        <div class= "row top"> </div>
-        <div>
-          <img class="mainphoto" src="images/concert.jpg" alt="top photo rhcp logo">
-        </div>
-        <div>
+              <!-- <div class= "row top"> </div> -->
+              <div class="row">
+                <img class="mainphoto" src="images/concert.jpg" alt="top photo rhcp logo">
+              </div>
+              <div>
 
-        </div>
-  </header>
-  <body>
+              </div>
+        </header>
+        <body class="backgroundim">
 
-    <!--  <div id="main">-->
-          <div class="container">
-              <ul id="tabs">
-                  <li class="active">Top Hits</li>
-                  <li>Watch</li>
-              </ul>
-              <ul id="tab">
-                  <li class="active">
-                      <h1>Top Hits</h1>
+          <div class= "row middle">
+                <div class= "col-md-12 col-sm-4">
+                    <h2> LISTEN </h2>
+                </div>
+                <div class= "col-md-12 col-sm-12">
+                  <p>
 
-                  </li>
-                  <li>
-                      <h1>Watch</h1>
-                      <!-- <ol> -->
-                        <!-- <li class="watchli"> -->
-                            <h3> Californication</h3>
-                            <h4> 1999 | Californication </h4>
-                            <div id="player"></div>
-                        <!-- </li>
-                        <li class="watchli"> -->
-                        <h3> Otherside</h3>
-                        <h4> 1999 | Californication </h4>
-                        <div id="player"></div>
-                      <!-- </li>
-                      <li class="watchli"> -->
-                        <h3> Snow</h3>
-                        <h4> 2006 | Stadium Arcadium</h4>
-                        <div id="player"></div>
-                      <!-- </li>
-                      <li class="watchli"> -->
-                        <h3> Under the Bridge</h3>
-                        <h4> 1991 | Blood Sugar Sex Magik </h4>
+                  </p>
+                </div>
+            </div>
 
-                        <div id="player"></div>
-                      <!-- </li>
-                      <li class="watchli"> -->
-                        <h3>Californication | 1999</h3>
-                        <div id="player"></div>
-                      <!-- </li>
-                    </ol> -->
-                  </li>
-              </ul>
-          </div>
+          <!--  <div id="main">-->
+                <div class="container">
+                    <ul id="tabs">
+                        <li class="active">Spotify</li>
+                        <li>Youtube</li>
+                    </ul>
+                    <ul id="tab">
+                        <li class="active">
+                            <h1>Spotify</h1>
 
-          <script>
-            // 2. This code loads the IFrame Player API code asynchronously.
-            var tag = document.createElement('script');
+                                <div id="spotify" style="min-width: 300px; height: 300px; margin: 0 auto"></div>
+                        </li>
+                        <li>
+                                  <h1>Youtube</h1>
+                                  <div id="youtube" style="min-width: 300px; height: 300px; margin: 0 auto"></div>
 
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                        </li>
+                      </ul>
+              </div>
 
-            // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
-            var player;
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('player', {
-                height: '100%',
-                width: '100%',
-                videoId: 'rn_YodiJO6k',
-                events: {
-                //  'onReady': onPlayerReady,
-                  'onStateChange': onPlayerStateChange
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+      <script>
+      function buildSpot() {
+      $('#spotify').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Top RHCP Songs on Spotify'
+        },
+        subtitle: {
+            text: 'Data from Spotify, November 2015'
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '9px',
+                    fontFamily: 'Verdana, sans-serif',
+                    color: 'red'
+
+                  }
                 }
-              });
+              // title: {
+              //     text: 'Level of Strictness for DUI Laws'
+              // }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Number of Favorites'
             }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Number of favorites as of November 2015: <b>{point.y:.1f}</b>'
+        },
+        series: [{
+            name: 'Spotify Favorites',
+            data:  [
+              ['Californication', 88704030],
+              ['Under The Bridge', 89916862],
+              ['Snow (Hey Oh)', 77827298],
+              ['Otherside', 62925309],
+              ["Scar Tissue", 53699839],
+              ["Can't Stop", 47645710],
+              ["Dani California", 46998687],
+              ["By The Way", 34122109],
+              ["...Rain Dance Maggie", 16526392]
 
-            // 4. The API will call this function when the video player is ready.
-            function onPlayerReady(event) {
-              event.target.playVideo();
+            ],
+            color: 'red',
+            //ParentData,
+            dataLabels: {
+              //  enabled: true,
+                rotation: -90,
+                color: '#3D316A',
+                align: 'right',
+              //  format: '{point.y:.1f}', // one decimal
+                y: -10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
             }
+        }]
+      });
+      buildYoutube();
+      };
 
-            // 5. The API calls this function when the player's state changes.
-            //    The function indicates that when playing a video (state=1),
-            //    the player should play for six seconds and then stop.
-            var done = false;
-            function onPlayerStateChange(event) {
-              if (event.data == YT.PlayerState.PLAYING && !done) {
-                setTimeout(stopVideo, 6000);
-                done = true;
-              }
+      function buildYoutube() {
+      $('#youtube').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Top Youtube Plays'
+        },
+        subtitle: {
+            text: 'Data from Spotify, November 2015'
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '9px',
+                    fontFamily: 'Verdana, sans-serif',
+                    color: 'red'
+
+                  }
+                }
+              // title: {
+              //     text: 'Level of Strictness for DUI Laws'
+              // }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Views on Youtube'
             }
-            function stopVideo() {
-              player.stopVideo();
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Number of favorites as of November 2015: <b>{point.y:.1f}</b>'
+        },
+        series: [{
+            name: 'Spotify Favorites',
+            data:  [
+              ['Californication', 195302392],
+              ['Under The Bridge', 33342943],
+              ['Snow (Hey Oh)', 22696721],
+              ['Otherside', 80884250],
+              ["Scar Tissue", 42476225],
+              ["Can't Stop", 33829963],
+              ["Dani California", 62323107],
+              ["By The Way", 60427509],
+              ["...Rain Dance Maggie", 63029090]
+
+            ],
+            color: 'red',
+            //ParentData,
+            dataLabels: {
+              //  enabled: true,
+                rotation: -90,
+                color: '#3D316A',
+                align: 'right',
+              //  format: '{point.y:.1f}', // one decimal
+                y: -10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
             }
-          </script>
-          <!-- <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4RLH88vEJYyQwRtFEUhucvmo3TQS13bA&callback=initMap">
-            //put key where it says "YOUR_KEY_HERE" in code
-          </script> -->
+        }]
+      });
+//      buildYoutube();
+      };
 
-          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-          <!-- Include all compiled plugins (below), or include individual files as needed -->
-          <script src="js/bootstrap.min.js"></script>
-    </body>
+      $(document).ready(function(){
+      console.log("doc ready!");
+      buildSpot();
+      })
+</script>
 
-  </html>
+</body>
+</html>
