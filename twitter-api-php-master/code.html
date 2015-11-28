@@ -1,0 +1,140 @@
+<html>
+<head>
+  <title>Twitter API </twitter>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Twitter API</title>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="assets/twitter-sprites.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+      <script src="twitter.js"></script>
+
+
+
+<script>
+
+        function pageComplete(){
+          $('.tweet').tweetLinkify();
+        }
+</script>
+
+
+
+
+      <style>
+        .border {
+          border-bottom: dotted 1px black;
+          padding-bottom: 10px;
+          clear: both;
+        }
+
+        .float-left {
+          float: left;
+        }
+
+        .bold {
+          font-weight: 700;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        .handle {
+          color: gray;
+          font-size: 11px;
+        }
+
+        .twitter-pic {
+          padding-right: 10px;
+        }
+
+        .name {
+
+        }
+
+        .font-small {
+          font-size: 11px;
+        }
+
+        .tweet-div {
+          clear: both;
+          padding: 8px;
+          border-bottom: 1px solid #CCD6DD;
+          border-right: 1px solid #CCD6DD;
+        }
+
+        .twitpic {
+          clear: both;
+        }
+
+        .twitter-media {
+          max-width: 285px;
+          max-height: 285px;
+          margin: 0 auto;
+          display: block;
+        }
+
+        .twitter-div {
+          width: 305px;
+          overflow-x: hidden;
+        }
+
+        .twitter-intent {
+          display: inline-block;
+        }
+
+        .tweet-options {
+          padding-top: 8px;
+        }
+
+        .row-height {
+          height: 20px;
+        }
+
+        .col-md-4, .col-xs-4 {
+          padding-left: 40px;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+        .tweet a {
+          color: #55ACEE;
+        }
+
+        .expand {
+          color: #A9ACAE;
+          font-size: 12px;
+        }
+
+        .expand:hover {
+          color: #666666;
+        }
+
+        body {
+          overflow-x: hidden;
+        }
+      </style>
+
+</head>
+<body>
+
+<div class="col-md-8 col-sm-8 col-xs-12 twitter ">
+       <iframe id='twitter' src='http://coridymond.com/586/apps/API/index.php' ></iframe>
+     </div>
+
+</body>
+
+</html>

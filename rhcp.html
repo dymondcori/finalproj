@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Red Hot Chili Peppers</title>
+    <title>Fans | Red Hot Chili Peppers</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,12 +22,12 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 
     <!-- js -->
-    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
     <script src="js/modernizr.js"></script>
     <!-- <script src="js/brit.js"></script> -->
 
     <script src="js/tabs.js"></script>
-    <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="js/twitter.js"></script>
     <script src="js/practice.js" type="text/javascript"></script>
   </head>
 
@@ -38,14 +38,14 @@
             <div class= "row" id="main-menu">
               <div class="navdiv2"><a href="index.html">&#10035;</a></div>
               <div class="navdiv2"><a href="about.html">About</a></div>
-              <div class="navdiv2"><a href="listen.html">Listen</a></div>
+              <div class="navdiv2"><a href="listen.html">Music</a></div>
               <div class="navdiv-active"><a href="rhcp.html">Fans</a></div>
               <div class="arrow"><a href="#">&#8593;</a></div>
 
 
             </div>
 
-      
+
         <!-- <div class= "row top"> </div>
         <div> -->
         <div class= "row">
@@ -65,7 +65,7 @@
       <div class="container">
           <ul id="tabs">
               <li class="active">Flickr</li>
-              <li>Twitter</li>
+              <li> Twitter </li>
               <li>Instagram</li>
           </ul>
           <ul id="tab">
@@ -73,10 +73,13 @@
                   <h2>Flickr</h2>
                 <div id="Flickr"></div>
               </li>
-              <li>
-                  <h2>Twitter</h2>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, fugit nobis qui temporibus culpa inventore consectetur aliquam. Unde, itaque, quos, laboriosam, reprehenderit ipsa deleniti sequi animi eveniet dolorem maiores alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, pariatur, laborum, sit molestiae eos itaque iste repudiandae eum aperiam ad sapiente dicta reprehenderit. Omnis culpa harum blanditiis voluptates explicabo quis?
-              </li>
+
+              <li class="active">
+                <h2>Twitter</h2>
+                <iframe id="twitteriframe" height="700px" src='http://coridymond.com/586/apps/API/index.php' ></iframe>
+            </li>
+
+
               <li>
                   <h2>Instagram</h2>
                   <div id="instagram"></div>
@@ -84,143 +87,11 @@
           </ul>
       </div>
 
-
-<!--Concert Map tabbed -->
-<!-- <div class="container">
-    <ul id="tabs">
-        <li class="active">Map1</li>
-        <li>map2</li>
-        <li>map3</li>
-    </ul>
-    <ul id="tab">
-        <li class="active">
-            <h2>Map</h2>
-          <!--  <div id="map"></div> -->
-            <!-- </li>
-        <li>
-            <h2>Map2</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, fugit nobis qui temporibus culpa inventore consectetur aliquam. Unde, itaque, quos, laboriosam, reprehenderit ipsa deleniti sequi animi eveniet dolorem maiores alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, pariatur, laborum, sit molestiae eos itaque iste repudiandae eum aperiam ad sapiente dicta reprehenderit. Omnis culpa harum blanditiis voluptates explicabo quis?
-        </li>
-        <li>
-            <h2>map3</h2>
-        </li>
-    </ul>
-</div> -->
+      <footer>
+          Cori Dymond | JOMC 586 Final | December 2015
+      </footer>
 
 
-
-
-    <!-- map js -->
-  <!-- <script type="text/javascript">
-
-  var map;
-  function initMap() {
-  var unc = {lat: 35.905262, lng: -79.050973};
-  var state = {lat: 35.784663, lng: -78.682095};
-  var duke = {lat: 35.965991, lng: -78.948102};
-
-  map = new google.maps.Map(document.getElementById('map'), {
-  //  center: {lat: 28.578031, lng: -81.351116},
-  center: unc,
-    zoom: 11,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-    //keep adding things here to change the map
-  });
-
-  var marker = new google.maps.Marker({
-    position: unc,
-    map: map,
-    title: 'UNC'
-  });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
-
-
-  var marker2 = new google.maps.Marker({
-    position: state,
-    map: map,
-    title: 'STATE'
-  });
-  marker2.addListener('click', function() {
-    infowindow2.open(map, marker2);
-  });
-
-
-  var marker3 = new google.maps.Marker({
-    position: duke,
-    map: map,
-    title: 'DUKE'
-  });
-  marker3.addListener('click', function() {
-    infowindow3.open(map, marker3);
-  });
-
-  var contentString = '<div id="content">'+
-        '<div id="siteNotice">'+
-        '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">University of North Carolina</h1>'+
-        '<div id="bodyContent">'+
-        '<iframe src="https://en.wikipedia.org/wiki/University_of_North_Carolina_at_Chapel_Hill"></iframe>'+
-        '</div>'+
-        '</div>';
-
-    var infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
-
-    var contentState = '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">NC State University</h1>'+
-          '<div id="bodyContent">'+
-          '<iframe src="https://en.wikipedia.org/wiki/North_Carolina_State_University"></iframe>'+
-          '</div>'+
-          '</div>';
-
-      var infowindow2 = new google.maps.InfoWindow({
-        content: contentState
-      });
-      var contentDuke = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Duke University</h1>'+
-            '<div id="bodyContent">'+
-            '<iframe src="https://en.wikipedia.org/wiki/Duke"></iframe>'+
-            '</div>'+
-            '</div>';
-
-        var infowindow3 = new google.maps.InfoWindow({
-          content: contentDuke
-        });
-
-
-          var flightPlanCoordinates = [
-                  {lat: 35.905262, lng: -79.050973},
-                  {lat: 35.784663, lng: -78.682095},
-                  {lat: 35.965991, lng: -78.948102},
-                  {lat: 35.905262, lng: -79.050973}
-          ];
-          var flightPath = new google.maps.Polyline({
-            path: flightPlanCoordinates,
-            geodesic: true,
-            strokeColor: '#FF0000',
-            strokeOpacity: 1.0,
-            strokeWeight: 2
-          });
-
-          flightPath.setMap(map);
-
-
-      }
-
-
-    </script> -->
-
-    <!-- <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4RLH88vEJYyQwRtFEUhucvmo3TQS13bA&callback=initMap">
-      //put key where it says "YOUR_KEY_HERE" in code
-    </script> -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
