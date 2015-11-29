@@ -251,6 +251,7 @@ a:active {
 
 iframe{
   background-color: black;
+  overflow: scroll;
 }
 #twitteriframe {
 width: 100%;
@@ -259,6 +260,12 @@ background-color: black;
 color: white;
 font-family: 'Amatic SC', cursive;
 
+}
+
+.memberiframe {
+  width: 100%;
+  height: 100px;
+  overflow : auto;
 }
 
 .username-twitter {
@@ -279,4 +286,20 @@ font-family: 'Amatic SC', cursive;
   display: inline;
   font-family: 'Amatic SC', cursive;
 
+}
+
+/*iframe scroll for mobile */
+.scroll-wrapper {
+	-webkit-overflow-scrolling: touch;
+  	overflow-y: auto;
+
+	/* important:  dimensions or positioning here! */
+}
+
+.scroll-wrapper iframe {
+	/* nada! */
+}
+
+.ponblack {
+  color: white;
 }
