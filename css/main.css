@@ -291,7 +291,8 @@ font-family: 'Amatic SC', cursive;
 /*iframe scroll for mobile */
 .scroll-wrapper {
 	-webkit-overflow-scrolling: touch;
-  	overflow-y: auto;
+  	overflow: auto;
+    height: 400px;
 
 	/* important:  dimensions or positioning here! */
 }
@@ -302,4 +303,6 @@ font-family: 'Amatic SC', cursive;
 
 .ponblack {
   color: white;
+  font-size: 9px;
+  font-family: 'Ariel', sans-serif;
 }
