@@ -1,0 +1,96 @@
+.border {
+  /*border-bottom: dotted 1px black;*/
+  padding-bottom: 10px;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.bold {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: White;
+}
+.handle {
+  color: gray;
+  font-size: 11px;
+}
+.twitter-pic {
+  padding-right: 10px;
+}
+.name {
+  font-size: 20px;
+}
+.tweet {
+  font-family: sans-serif;
+}
+.font-small {
+  font-size: 13px;
+}
+.tweet-div {
+  clear: both;
+  color: white;
+  padding: 8px;
+  border-bottom: 1px solid #CCD6DD;
+  /*border-right: 1px solid #CCD6DD;*/
+}
+.twitpic {
+  clear: both;
+}
+.twitter-media {
+  max-width: 285px;
+  max-height: 285px;
+  margin: 0 auto;
+  display: block;
+}
+.twitter-div {
+  width: 305px;
+  /*overflow-x: hidden;*/
+  font-family: 'Amatic SC', cursive;
+  font-size: 14px;
+
+}
+.twitter-intent {
+  display: inline-block;
+}
+.tweet-options {
+  padding-top: 8px;
+}
+.row-height {
+  height: 20px;
+}
+.col-md-4, .col-xs-4 {
+  padding-left: 40px;
+}
+.middle {
+  /*border-right: 1px solid gray;
+  border-left: 1px solid gray;*/
+}
+a:hover {
+  text-decoration: none;
+}
+.tweet a {
+  color: #55ACEE;
+}
+.expand {
+  color: #A9ACAE;
+  font-size: 12px;
+}
+.expand:hover {
+  color: #666666;
+}
+img {
+  max-width: 200px;
+}
+body {
+  /*overflow-x: hidden;*/
+}
+#instagram-martin {
+  height: 200px;
+}
+.flickr-images {
+  width: 200px;
+  height: auto;
+}
